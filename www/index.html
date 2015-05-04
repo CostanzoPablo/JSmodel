@@ -25,17 +25,30 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <link rel="stylesheet" type="text/css" href="css/tools.css" />
+        <title>JSmodel</title>
     </head>
     <body>
-    <div style="width:640px; margin:auto; position:relative; font-size: 9pt; color: #777777; opacity: 1.0;">
-        <canvas id="cv" width="640" height="480" ></canvas>
+
+    <div id="main_frame" style="width:640px; margin:auto; position:relative; font-size: 9pt; color: #777777; opacity: 1.0;">
+        <canvas id="cv" style="border: 1px solid;" width="640" height="480" ></canvas>
     </div>
-    <script type="text/javascript" src="./js/jsc3d.js"></script>
-    <script type="text/javascript" src="./js/jsc3d.webgl.js"></script>
-    <script type="text/javascript" src="./js/jsc3d.touch.js"></script>
-    <script type="text/javascript" src="./js/jsc3d.core.js"></script>
+
+    <div id="tools">
+        <div onclick="loadModel('0');">CARGAR KNIGHT</div>
+        <div onclick="loadModel('1');">CARGAR SOLDIER</div>
+        <div onclick="md2_player.play();">ANIMAR</div>
+        <div onclick="md2_player.pause();">DETENER</div>
+    </div>
+
+    <script type="text/javascript" src="./vendor/jsc3d/jsc3d.js"></script>
+    <script type="text/javascript" src="./vendor/jsc3d/jsc3d.touch.js"></script>
+    <script type="text/javascript" src="./vendor/md2viewer/md2.js"></script>
+    <script type="text/javascript" src="./js/models.js"></script>
+    <script type="text/javascript" src="./js/models_core.js"></script>
+
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+
     </body>
 </html>

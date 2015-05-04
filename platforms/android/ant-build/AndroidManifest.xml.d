@@ -1,2 +1,2 @@
-/home/pablo/cordovaProjects/jsmodel/platforms/android/ant-build/AndroidManifest.xml : \
-/home/pablo/cordovaProjects/jsmodel/platforms/android/AndroidManifest.xml \
+/home/eva/cordova/JSmodel/platforms/android/ant-build/AndroidManifest.xml : \
+/home/eva/cordova/JSmodel/platforms/android/AndroidManifest.xml \
